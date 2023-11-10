@@ -1,0 +1,147 @@
+[
+    {
+        "_id": {
+            "$oid": "633b6f7111d2748b50c991e2"
+        },
+        "username": "deletedUser",
+        "password": "$2b$10$Ya4Ul2VG.LjXZAVDn/H0purEAR0ueV95dEZW80Q9IdL9XjORMPItW",
+        "role": "user",
+        "deleted": [
+            {
+                "at": {
+                    "$date": {
+                        "$numberLong": "1664839537102"
+                    }
+                },
+                "by": {
+                    "$oid": "6333634f5e0e9a6e32eb1fd0"
+                }
+            }
+        ],
+        "created": {
+            "$date": {
+                "$numberLong": "1664839537104"
+            }
+        },
+        "edited": [],
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "633b70392545351c9cfabf03"
+        },
+        "username": "deleteThisUser",
+        "password": "$2b$10$OAx6CW.DezTLNc3s660aHe.242vZwhU9n6OdCGBTl/iiynOJ6y9NW",
+        "role": "user",
+        "created": {
+            "$date": {
+                "$numberLong": "1664839737218"
+            }
+        },
+        "edited": [],
+        "deleted": [],
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "633b7658ed8354d50119f2a1"
+        },
+        "username": "newUsername",
+        "password": "$2b$10$Zy4i.F7WA9UXkxrnD3HDgedu3.HfiaJEZ/j33q31bqXub7YAP6mtK",
+        "role": "mod",
+        "created": {
+            "$date": {
+                "$numberLong": "1664841304533"
+            }
+        },
+        "edited": [
+            {
+                "at": {
+                    "$date": {
+                        "$numberLong": "1664842356170"
+                    }
+                },
+                "by": {
+                    "$oid": "633b79e0f23dcc08f5c72acf"
+                }
+            }
+        ],
+        "deleted": [],
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "633b78c4f7857befa40b2823"
+        },
+        "username": "Moderator",
+        "password": "$2b$10$NPKqRleS5oneDU8Ppt82ZeRQC8TeIwNJ6TiiwZpr0IOCwMCggW//m",
+        "role": "mod",
+        "created": {
+            "$date": {
+                "$numberLong": "1664841924048"
+            }
+        },
+        "edited": [],
+        "deleted": [],
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "633b78c4f7857befa40b2826"
+        },
+        "username": "userToEdit",
+        "password": "$2b$10$9lzP9CiQyoY.53k87pklTOQ6aADgE9oyqxKt9zeo2nEL41siA07cK",
+        "role": "user",
+        "deleted": [
+            {
+                "at": {
+                    "$date": {
+                        "$numberLong": "1664841924050"
+                    }
+                },
+                "by": {
+                    "$oid": "6333634f5e0e9a6e32eb1fd0"
+                }
+            }
+        ],
+        "created": {
+            "$date": {
+                "$numberLong": "1664841924051"
+            }
+        },
+        "edited": [],
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "633b79e0f23dcc08f5c72acf"
+        },
+        "username": "apiAdmin",
+        "password": "$2b$10$SDsOBaRxzS3T0xm3RoIQUusAulFMy1XGX7OpuZ2A5KAmrUeMEXkxG",
+        "role": "admin",
+        "created": {
+            "$date": {
+                "$numberLong": "1664842208436"
+            }
+        },
+        "edited": [],
+        "deleted": [],
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "633b7adaeefe7b60b0b868b4"
+        },
+        "username": "regularUser",
+        "password": "$2b$10$eJrfwkgT2R30m4XeLqpkd.w3q4HhJ43yQQKO5Var1NlnD1y8jMIWC",
+        "role": "user",
+        "created": {
+            "$date": {
+                "$numberLong": "1664842458856"
+            }
+        },
+        "edited": [],
+        "deleted": [],
+        "__v": 0
+    }
+]

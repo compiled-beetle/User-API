@@ -1,0 +1,32 @@
+{
+    "name": "repos-api",
+    "version": "1.0.0",
+    "description": "role-based access control api",
+    "main": "index.js",
+    "keywords": [
+        "user",
+        "role",
+        "auth",
+        "rbac",
+        "api"
+    ],
+    "author": "António Costa",
+    "license": "MIT",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "express-session": "^1.17.3",
+        "mongoose": "^6.5.3",
+        "serve-favicon": "^2.5.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    },
+    "scripts": {
+        "start-pro": "node index.js",
+        "start-dev": "nodemon index.js",
+        "seed-user": "node ./database/seeders/userSeeder.js"
+    }
+}

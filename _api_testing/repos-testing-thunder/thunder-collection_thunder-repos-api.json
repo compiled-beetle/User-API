@@ -1,0 +1,274 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "repos-api",
+    "dateExported": "2022-10-04T00:17:48.998Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "d0be1294-5ef8-4e73-a5a2-0e05442c88be",
+            "name": "auth",
+            "containerId": "",
+            "created": "2022-10-03T23:50:30.079Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "2e5ea903-bac1-48db-b526-b10b45517a4a",
+            "name": "users",
+            "containerId": "",
+            "created": "2022-10-03T23:53:49.012Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b6989c00-1a4d-4085-8251-e8852c1d609d",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "",
+            "name": "[/] home",
+            "url": "http://127.0.0.1:3000",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2022-10-03T23:50:14.112Z",
+            "modified": "2022-10-03T23:52:04.132Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a168419f-7ca9-4c3a-96ab-00462302d22f",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "d0be1294-5ef8-4e73-a5a2-0e05442c88be",
+            "name": "[auth/login] user okay",
+            "url": "http://127.0.0.1:3000/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2022-10-03T23:50:45.473Z",
+            "modified": "2022-10-03T23:51:07.409Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"username\": \"regularUser\",\n\t\"password\": \"!1Apassword\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5bf9d718-af67-4cea-8da5-7573b7170bc5",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "d0be1294-5ef8-4e73-a5a2-0e05442c88be",
+            "name": "[auth/login] mod okay",
+            "url": "http://127.0.0.1:3000/auth/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2022-10-03T23:51:16.036Z",
+            "modified": "2022-10-03T23:51:53.090Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"username\": \"Moderator\",\n\t\"password\": \"?2Bpassword\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1254197a-b3e9-4e96-b581-4ef55f15c58a",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "d0be1294-5ef8-4e73-a5a2-0e05442c88be",
+            "name": "[auth/login] fail deleted user",
+            "url": "http://127.0.0.1:3000/auth/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2022-10-03T23:52:18.804Z",
+            "modified": "2022-10-03T23:52:37.718Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"username\": \"deletedUser\",\n\t\"password\": \"deletedPass\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3b22f269-a8e6-4510-8c14-3bd55d526828",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "d0be1294-5ef8-4e73-a5a2-0e05442c88be",
+            "name": "[auth/login] admin okay",
+            "url": "http://127.0.0.1:3000/auth/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2022-10-03T23:51:18.090Z",
+            "modified": "2022-10-03T23:51:56.189Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"username\": \"apiAdmin\",\n\t\"password\": \"Kl1!jadmin\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "444bfd5b-8869-4b23-b156-ec08814340e7",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "d0be1294-5ef8-4e73-a5a2-0e05442c88be",
+            "name": "[auth/login] fail no data",
+            "url": "http://127.0.0.1:3000/auth/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2022-10-03T23:53:03.421Z",
+            "modified": "2022-10-03T23:53:10.807Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fa1e442e-e1d9-4f9e-8f46-5a842d63537d",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "d0be1294-5ef8-4e73-a5a2-0e05442c88be",
+            "name": "[auth/login] fail no data Copy",
+            "url": "http://127.0.0.1:3000/auth/logout",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2022-10-03T23:53:17.668Z",
+            "modified": "2022-10-03T23:53:29.471Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c220cba-3810-4834-97d1-e3907d8d72cb",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "2e5ea903-bac1-48db-b526-b10b45517a4a",
+            "name": "[users/] list users",
+            "url": "http://127.0.0.1:3000/users",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2022-10-03T23:54:05.796Z",
+            "modified": "2022-10-03T23:54:24.913Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf776b2f-19f7-4f06-963c-92e04cf681b2",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "2e5ea903-bac1-48db-b526-b10b45517a4a",
+            "name": "[users/] create new user",
+            "url": "http://127.0.0.1:3000/users",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2022-10-03T23:54:42.783Z",
+            "modified": "2022-10-03T23:55:04.544Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"username\": \"ThisUser\",\n\t\"password\": \"ThisUser\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9e391e50-28de-4d72-baf0-00c947ff8101",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "2e5ea903-bac1-48db-b526-b10b45517a4a",
+            "name": "[users/:id] get user by id",
+            "url": "http://127.0.0.1:3000/users/633b6f7111d2748b50c991df",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2022-10-03T23:55:18.730Z",
+            "modified": "2022-10-03T23:55:59.814Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "90eac218-5b4c-4e89-a6d5-6f06aee5a466",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "2e5ea903-bac1-48db-b526-b10b45517a4a",
+            "name": "[users/:id] get deleted user by id",
+            "url": "http://127.0.0.1:3000/users/633b6f7111d2748b50c991e3",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2022-10-03T23:56:14.520Z",
+            "modified": "2022-10-03T23:56:30.896Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8bd5a111-8770-47ef-8c8d-e2a760a7fea1",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "2e5ea903-bac1-48db-b526-b10b45517a4a",
+            "name": "[users/:id] edit user",
+            "url": "http://127.0.0.1:3000/users/633b6f7111d2748b50c991e3",
+            "method": "PATCH",
+            "sortNum": 100000,
+            "created": "2022-10-03T23:57:13.006Z",
+            "modified": "2022-10-03T23:57:48.054Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"username\": \"newUsername\",\n\t\"password\": \"newPassword\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4dd44ab3-921b-40ae-963f-e4ac1a59691b",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "2e5ea903-bac1-48db-b526-b10b45517a4a",
+            "name": "[users/:id] edit user with role",
+            "url": "http://127.0.0.1:3000/users/633b7658ed8354d50119f2a1",
+            "method": "PATCH",
+            "sortNum": 110000,
+            "created": "2022-10-03T23:58:04.925Z",
+            "modified": "2022-10-04T00:12:36.182Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"username\": \"newUsername\",\n\t\"password\": \"newPassword\",\n\t\"role\": \"mod\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3ab02550-6ae1-489b-9e8d-9250e4ca889e",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "2e5ea903-bac1-48db-b526-b10b45517a4a",
+            "name": "[users/:id] soft delete",
+            "url": "http://127.0.0.1:3000/users/633b6f7111d2748b50c991e3",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2022-10-03T23:59:29.019Z",
+            "modified": "2022-10-03T23:59:46.462Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ad5f5607-4617-46a2-af0b-d41c9b7d8af3",
+            "colId": "35cc18c3-01b3-4701-921e-e4c69e17fbc1",
+            "containerId": "2e5ea903-bac1-48db-b526-b10b45517a4a",
+            "name": "[users/:id] hard delete by admin",
+            "url": "http://127.0.0.1:3000/users/633b70392545351c9cfabf03",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2022-10-04T00:00:15.718Z",
+            "modified": "2022-10-04T00:08:15.195Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"key\": \"rep0s4P1hA4dK3y\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
